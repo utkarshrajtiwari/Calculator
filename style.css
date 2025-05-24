@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 21, 21);
+}
+
+.container {
+  height: 670px;
+  width: 500px;
+  background-color: rgb(18, 12, 12);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .display {
+  height: 100px;
+  width: 90%;
+  margin: 8px 4px;
+  border-bottom: 2px solid rgb(193, 7, 72);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container .display #display-info {
+  width: 100%;
+  font-size: 50px;
+  text-align: right;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.container .btn-container {
+  height: 450px;
+  width: 90%;
+}
+.container .btn-container .row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.container .btn-container .row button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  font-size: 50px;
+}
+.container .btn-container .row button:active {
+  scale: 0.9;
+}
+.container .btn-container .row #ac {
+  background-color: gray;
+}
+.container .btn-container .row #de {
+  background-color: gray;
+}
+.container .btn-container .row #dot {
+  background-color: gray;
+}
+.container .btn-container .row #divide {
+  background-color: rgb(228, 221, 14);
+}
+.container .btn-container .row #multiply {
+  background-color: rgb(228, 221, 14);
+}
+.container .btn-container .row #subtract {
+  background-color: rgb(228, 221, 14);
+}
+.container .btn-container .row #addition {
+  background-color: rgb(228, 221, 14);
+}
+.container .btn-container .row #equals {
+  width: 180px;
+  border-radius: 30px;
+}/*# sourceMappingURL=style.css.map */

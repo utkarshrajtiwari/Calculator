@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container for the calculator -->
+    <div class="container">
+      <!-- Display section to show user input and results -->
+      <div class="display">
+        <!-- Input field to display numbers, operators, and results; readonly to prevent direct typing -->
+        <input type="text" id="display-info" readonly />
+      </div>
+      <!-- Container for all calculator buttons -->
+      <div class="btn-container">
+        <!-- Row 1: Clear, Delete, Decimal, and Divide buttons -->
+        <div class="row">
+          <!-- AC button to reset the display -->
+          <button id="ac" onclick="clearDisplay()">AC</button>
+          <!-- DE button to delete the last character -->
+          <button id="de" onclick="deleteLast()">DE</button>
+          <!-- Decimal point button -->
+          <button id="dot" onclick="appendToDisplay('.')">.</button>
+          <!-- Division operator button -->
+          <button id="divide" onclick="appendToDisplay('/')">/</button>
+        </div>
+        <!-- Row 2: Numbers 7, 8, 9, and Multiply button -->
+        <div class="row">
+          <button id="seven" onclick="appendToDisplay('7')">7</button>
+          <button id="eight" onclick="appendToDisplay('8')">8</button>
+          <button id="nine" onclick="appendToDisplay('9')">9</button>
+          <!-- Multiplication operator button -->
+          <button id="multiply" onclick="appendToDisplay('*')">*</button>
+        </div>
+        <!-- Row 3: Numbers 4, 5, 6, and Subtract button -->
+        <div class="row">
+          <button id="four" onclick="appendToDisplay('4')">4</button>
+          <button id="five" onclick="appendToDisplay('5')">5</button>
+          <button id="six" onclick="appendToDisplay('6')">6</button>
+          <!-- Subtraction operator button -->
+          <button id="subtract" onclick="appendToDisplay('-')">-</button>
+        </div>
+        <!-- Row 4: Numbers 1, 2, 3, and Add button -->
+        <div class="row">
+          <button id="one" onclick="appendToDisplay('1')">1</button>
+          <button id="two" onclick="appendToDisplay('2')">2</button>
+          <button id="three" onclick="appendToDisplay('3')">3</button>
+          <!-- Addition operator button -->
+          <button id="addition" onclick="appendToDisplay('+')">+</button>
+        </div>
+        <!-- Row 5: Double zero, Zero, and Equals button -->
+        <div class="row">
+          <!-- Double zero for quick input of large numbers -->
+          <button id="doublezero" onclick="appendToDisplay('00')">00</button>
+          <button id="zero" onclick="appendToDisplay('0')">0</button>
+          <!-- Equals button to calculate the result -->
+          <button id="equals" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <!-- Link to the JavaScript file for calculator logic -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 21, 21);
+}
+
+.container {
+  height: 670px;
+  width: 500px;
+  background-color: rgb(18, 12, 12);
+
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+
+  .display {
+    height: 100px;
+    width: 90%;
+    // background-color: aqua;
+    margin: 8px 4px;
+    border-bottom: 2px solid rgb(193, 7, 72);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    #display-info {
+      width: 100%;
+      font-size: 50px;
+      text-align: right;
+      background-color: transparent;
+      color: white;
+      border: none;
+    }
+  }
+
+  .btn-container {
+    height: 450px;
+    width: 90%;
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        font-size: 50px;
+      }
+
+      button:active {
+        scale: 0.9;
+      }
+
+      #ac {
+        background-color: gray;
+      }
+
+      #de {
+        background-color: gray;
+      }
+
+      #dot {
+        background-color: gray;
+      }
+
+      #divide {
+        background-color: rgb(228, 221, 14);
+      }
+
+      #multiply {
+        background-color: rgb(228, 221, 14);
+      }
+
+      #subtract {
+        background-color: rgb(228, 221, 14);
+      }
+
+      #addition {
+        background-color: rgb(228, 221, 14);
+      }
+
+      #equals {
+        width: 180px;
+        border-radius: 30px;
+      }
+    }
+  }
+}
