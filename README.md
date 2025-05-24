@@ -29,7 +29,7 @@ If the project is hosted on GitHub, you can clone it:
 bash
 
 Copy
-git clone <repository-url>
+git clone <https://github.com/utkarshrajtiwari/Calculator.git>
 Open the Calculator:
 Navigate to the project folder.
 Double-click index.html to open it in your web browser, or drag the file into a browser window.
